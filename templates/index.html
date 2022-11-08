@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <div class="container">
+        <h1>Recommend</h1>
+
+        <form action="/songs" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Enter your mood:</label>
+              <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mood">
+            </div>
+            <button type="submit" class="btn btn-secondary">Submit</button>
+          </form>
+
+
+
+    </div>
+
+{% endblock %}
